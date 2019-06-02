@@ -1,0 +1,27 @@
+.logoutBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+}
+
+.userBtn {
+    position: absolute;
+    top: 0;
+    right: 60px;
+    margin: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 2px solid black;
+}
+
+th, td {
+    padding-left: 8px;
+    padding-right: 8px;
+}

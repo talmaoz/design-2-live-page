@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.planets-wrapper {
+    width: 400px;
+    height: 600px;
+    background-color: black;
+}
+
+.planet-wrapper {
+    width: 100%;
+    height: 0;
+    margin: 0 auto;
+    padding: 0;
+    background-color: black;
+}
+
+.planet {
+    height: 100%;
+    width: 100%;
+    -moz-border-radius:50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin: 0;
+    background-color: mediumpurple;
+    box-shadow: inset -25px -25px 40px rgba(0,0,0,.5);
+    background-image: -webkit-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
+    background-image: -moz-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
+    background-image: -o-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
+    background-image: -ms-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
+}
+
