@@ -1,17 +1,12 @@
 'use strict'
 
 function onInit() {
-    var elsPostParagraphs = document.querySelectorAll('.post-paragraph')
-    for (var elPostParagraph of elsPostParagraphs) {
-        console.log(elPostParagraph)
-        ellipsizeTextBox(elPostParagraph)
-    }
+
+    // Remove "Continue Reading" button from posts that the paragraph fits inside its container :
+    removeContReadingButtonsIfRedundant()
+
+    // multiline replace overflowing text with "..." :
+    ellipsizePostsParagraphs()
+
 }
 
-function ellipsizeTextBox(elPostParagraph) {
-    var words = elPostParagraph.innerText.split(' ');
-    while(elPostParagraph.scrollHeight > elPostParagraph.offsetHeight) {
-        words.pop();
-        elPostParagraph.innerText = words.join(' ') + '...';
-    }
-}
