@@ -1,34 +1,91 @@
+@font-face {
+    font-family: 'eurofurence-eurof35';
+    src: url("../font/eurof35.ttf");
+}
+
 * {
+    margin: 0;
+    padding: 0;
+    border: 0;
     box-sizing: border-box;
 }
 
-
-.planets-wrapper {
-    width: 400px;
-    height: 600px;
-    background-color: black;
+ul, li {
+    list-style: none;
 }
 
-.planet-wrapper {
+/*Navigation Bar:*/
+
+.nav-bar {
     width: 100%;
-    height: 0;
+    box-shadow: inset 0 -6px 0 #1e1e1e;
+    background-color: #292929
+
+}
+
+.container {
+    width: 980px;
     margin: 0 auto;
-    padding: 0;
-    background-color: black;
+    display: block;
 }
 
-.planet {
-    height: 100%;
-    width: 100%;
-    -moz-border-radius:50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    margin: 0;
-    background-color: mediumpurple;
-    box-shadow: inset -25px -25px 40px rgba(0,0,0,.5);
-    background-image: -webkit-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
-    background-image: -moz-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
-    background-image: -o-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
-    background-image: -ms-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
+.nav-bar .container {
+    display: flex;
+    justify-content: space-between;    
 }
 
+.flex-column-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    color: #ffffff;
+    font-family: 'eurofurence-eurof35', Fallback, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.logo-b {
+    letter-spacing: -0.8px;
+}
+
+.logo-dot {
+    color: #58c93a;
+    letter-spacing: -0.8px;
+}
+
+.menu {
+    display: inline-block;
+}
+
+.menu-item {
+    float: left;
+    display: inline-block;
+    color: #ffffff;
+    text-shadow: 0 1px 0 #1e1e1e;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    width: 132px;
+    line-height: 130px;
+    text-align: center;
+    box-shadow: -1px 0 0 #1d1d1d, inset -1px 0 0 #1d1d1d;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    color: #58c93a;
+}
+
+.menu-item.active {
+    color: #58c93a;
+    box-shadow: -1px 0 0 #1d1d1d, inset 0 -6px 0 #58c93a;
+}
+
+/*Posts:*/
+.posts .container {
+    border: 1px solid #e1e0e0;
+}

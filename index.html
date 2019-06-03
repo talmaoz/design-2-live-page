@@ -4,25 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Quotes</title>
+    <title>Blogin</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body onload="onInit()">
 
-    <h1>Welcome to Quotes</h1>
-    <button onclick="quotesMapClicked()">Quotes Map</button>
-    <div class="planets-wrapper"></div>
 
-    <script src="js/util/main-consts.js"></script>
-    <script src="js/util/main-model.js"></script>
-    <script src="js/util/main-view.js"></script>
-    <script src="js/util/main-controller.js"></script>
+    <div class="nav-bar">
+        <div class="container">
+            <div class="flex-column-container">
+                <h1 class="logo">
+                    <span class="logo-b">B</span>
+                    login
+                    <span class="logo-dot">.</span>
+                </h1>
+            </div>
+            <div class="flex-column-container">
+                <ul class="menu">
+                    <li class="menu-item active">Journal</li>
+                    <li class="menu-item">About</li>
+                    <li class="menu-item">Work</li>
+                    <li class="menu-item">Contact</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-    <script src="js/login/login-consts.js"></script>
-    <script src="js/login/login-model.js"></script>
-    <script src="js/login/login-view.js"></script>
-    <script src="js/login/login-controller.js"></script>
+    <div class="posts">
+        <div class="container">
+
+            <div class="post">
+                <img class="post-img" src="img/post1.png" alt="img/empty-post.png">
+                <div class="post-texts-container">
+                    <h2 class="post-headline">Lorem ipsum shmipsum ipsum headline</h2>
+                    <p class="post-paragraph">Lorem ipsum shmipsum ipsum lkjhdflkg klsdjfdfg ljkhsdf dlkf dlfkj lkjdlkfjdf  lkjdfdf, dflkjdfldkjf, dfk;ljf;lkjf!. dfdflkjdf!</p>
+                </div>
+            </div>
+
+            <div class="post">
+                <img class="post-img" src="img/post2.png" alt="img/empty-post.png">
+                <div class="post-texts-container">
+                    <h2 class="post-headline">Lorem ipsum shmipsum ipsum headline</h2>
+                    <p class="post-paragraph">Lorem ipsum shmipsum ipsum lkjhdflkg klsdjfdfg ljkhsdf dlkf dlfkj lkjdlkfjdf  lkjdfdf, dflkjdfldkjf, dfk;ljf;lkjf!. dfdflkjdf!</p>
+                </div>
+            </div>
+
+            <div class="post">
+                <img class="post-img" src="img/post3.png" alt="img/empty-post.png">
+                <div class="post-texts-container">
+                    <h2 class="post-headline">Lorem ipsum shmipsum ipsum headline</h2>
+                    <p class="post-paragraph">Lorem ipsum shmipsum ipsum lkjhdflkg klsdjfdfg ljkhsdf dlkf dlfkj lkjdlkfjdf  lkjdfdf, dflkjdfldkjf, dfk;ljf;lkjf!. dfdflkjdf!</p>
+                </div>
+            </div>
+
+            <div class="next-previous-container">
+                <button class="previous-btn"></button>
+                <button class="next-btn"></button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="logo logo-footer">Blogin<span class="logo-dot">.</span></div>
+        <div class="footer-text"></div>
+        <ul class="footer-links">
+            <li class="facebook">f</li>
+            <li class="twitter">t</li>
+            <li class="be">be</li>
+            <li class="galgal">O</li>
+        </ul>
+    </div>
+
+    <script src="js/main/login-controller.js"></script>
 
 </body>
 </html>
