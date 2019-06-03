@@ -1,3 +1,8 @@
+/* =============================================== */
+/* =============================================== */
+/* ================== CSS Reset ================== */
+/* =============================================== */
+/* =============================================== */
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +14,9 @@ ul, li {
     list-style: none;
 }
 
+button {
+    background-color: #ffffff;
+}
 /* =============================================== */
 /* =============================================== */
 /* ================ Navigation Bar =============== */
@@ -41,9 +49,6 @@ ul, li {
 .logo {
     display: flex;
     color: #ffffff;
-    font-family: 'eurofurence-eurof35', Fallback, sans-serif;
-    font-size: 2.5rem;
-    font-weight: 400;
 }
 
 .logo-b {
@@ -94,7 +99,6 @@ ul, li {
     line-height: 60px;
     color: #818181;
     text-transform: uppercase;
-    background-color: #ffffff;
 }
 
 .next-previous-wrapper {
@@ -127,6 +131,24 @@ ul, li {
     color: #606060;
     line-height: 20px;
     margin-right: 20px;
+    height: 120px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.post-texts-container {
+    position: relative;
+}
+
+.cont-reading-button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 210px;
+    color: #58c93a;
+    line-height: 40px;
+    border: 2px solid #58c93a;
+    border-radius: 40px;
 }
 
 /* =============================================== */
@@ -137,6 +159,12 @@ ul, li {
 @font-face {
     font-family: 'eurofurence-eurof35';
     src: url("../font/eurof35.ttf");
+}
+
+.font-logo {
+    font-family: 'eurofurence-eurof35', Fallback, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
 }
 
 .font-lato {
